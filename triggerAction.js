@@ -21,7 +21,7 @@ server.post('/api/messages', connector.listen());
 bot.dialog('/', [
     function (session, results, next) {
         session.preferredLocale('es');
-        builder.Prompts.text(session, '¿Cómo te llamas?');
+        builder.Prompts.text(session, '¿hola Cómo te llamas?');
     },
     function (session, results) {
         session.dialogData.nombre = results.response;
